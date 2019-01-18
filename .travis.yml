@@ -5,5 +5,6 @@ compiler:
   - gcc
 
 script:
- - make -f Makefile.am
+ - ./configure --prefix=/usr
+ - make Makefile.am
  - sudo make install
