@@ -3,3 +3,8 @@ language: c
 compiler:
   - clang
   - gcc
+
+script:
+ - ./configure --prefix=/usr
+ - make
+ - sudo make install
